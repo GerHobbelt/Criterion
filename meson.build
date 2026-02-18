@@ -1,7 +1,7 @@
 project('criterion', 'c',
 		meson_version   : '>= 0.55.0',
 		license         : 'MIT',
-		version         : '2.4.2',
+		version         : '2.4.3',
 		default_options : ['c_std=c11', 'cpp_std=c++11', 'warning_level=2'])
 
 abi_version = '3.2.0'
