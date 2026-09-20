@@ -42,7 +42,7 @@ the user would have with other frameworks:
 
 | Platform | Command |
 | --- | --- |
-**Ubuntu** (>=21.04) / **Debian** (>=11) | `apt-get install libcriterion-dev`
+**Ubuntu** / **Debian** | `apt-get install libcriterion-dev`
 **Gentoo** | `emerge -a dev-libs/criterion`
 **Arch Linux** | `pacman -S criterion`
 **macOS** | `brew install criterion`
