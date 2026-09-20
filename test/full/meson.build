@@ -11,6 +11,7 @@ full_tests = [
 	'bug463.c',
 	'bug550.c',
 	'bug594.c',
+	'bug342.c',
 ]
 
 if get_option('theories').enabled()
@@ -42,3 +43,8 @@ foreach tst : full_tests
 			link_with: libcriterion.get_shared_lib())
 	test('full / ' + tst, e, args: '--always-succeed')
 endforeach
+
+bug584 = executable('bug584.c.bin', ['bug584.c', 'bug584-other-file.c'],
+		include_directories: [criterion_api],
+		link_with: libcriterion.get_shared_lib())
+test('full / bug584.c', bug584, args: '--always-succeed')
